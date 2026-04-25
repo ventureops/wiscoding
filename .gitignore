@@ -1,0 +1,17 @@
+# 에디터·IDE 개인 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 환경 변수·비밀
+.env
+.env.*
+!.env.example
+
+# Claude Code 로컬 설정
+.claude/settings.local.json

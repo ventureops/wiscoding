@@ -1,0 +1,52 @@
+name: 문서 수정 요청
+description: 기존 문서의 오타, 잘못된 정보, 보완할 내용을 알려주세요
+title: "[수정] "
+labels: ["fix", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 문서 수정 제안 ✏️
+
+        간단한 오타·링크 수정은 PR로 직접 보내주셔도 좋습니다.
+        내용이 크거나 방향 합의가 필요하다면 이 이슈로 먼저 알려주세요.
+
+  - type: input
+    id: target
+    attributes:
+      label: 대상 문서 경로
+      description: 수정하려는 문서의 경로 또는 URL을 적어주세요
+      placeholder: 예) docs/claude-code/hooks-basics.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 문제점
+      description: 현재 어떤 부분이 잘못되었거나 부족한가요? 가능하면 해당 줄 번호나 인용문을 포함해주세요.
+      placeholder: |
+        예) "방법" 섹션 3번째 단계에서 명령어가 `claude config`로 적혀 있는데,
+            현재 버전(2.x)에서는 `claude settings`로 바뀌었습니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 수정 제안
+      description: 어떻게 바꾸면 좋을지 적어주세요. 직접 PR을 보낼 계획이라면 "PR 예정"이라고만 적어도 됩니다.
+      placeholder: |
+        예) `claude config` → `claude settings` 로 변경.
+            추가로 v1.x에서는 어떻게 동작하는지 주석으로 남기면 좋을 것 같습니다.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 확인 환경 (선택)
+      description: 문제를 확인한 환경이 있다면 적어주세요
+      placeholder: 예) macOS 14, Claude Code 2.91.0
+    validations:
+      required: false

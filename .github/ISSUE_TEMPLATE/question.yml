@@ -1,0 +1,45 @@
+name: 질문하기
+description: 질문은 Discussions로 안내합니다
+title: "[질문] 이 템플릿은 사용하지 마세요"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 잠깐만요 ✋
+
+        **질문은 이슈가 아니라 [Discussions](../../discussions)에서 받고 있어요.**
+
+        Discussions가 더 좋은 이유:
+        - 답글에 ✅ 마크로 베스트 답변 지정 가능
+        - 카테고리(Q&A, Ideas, Show & Tell 등)로 구분되어 검색이 쉬움
+        - 이슈 트래커가 "할 일" 중심으로 깔끔하게 유지됨
+
+        ### 어디로 가면 되나요?
+
+        👉 **[Discussions로 이동](../../discussions/new/choose)**
+
+        잘 정리된 답변은 운영자가 정식 문서로 편입할 수 있습니다.
+
+        ---
+
+        그래도 이슈로 남기고 싶다면, 아래 양식을 채워주세요. 다만 운영자가 Discussions로
+        옮기길 권장할 수 있습니다.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문 내용
+      description: 어떤 점이 궁금하신가요?
+      placeholder: |
+        Discussions 사용을 권장합니다.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 확인
+      options:
+        - label: Discussions가 더 적합한 곳임을 이해했습니다. 그럼에도 이슈로 남기는 합당한 이유가 있습니다.
+          required: true

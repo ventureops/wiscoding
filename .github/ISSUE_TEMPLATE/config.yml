@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions에서 질문·토론
+    url: https://github.com/ventureops/wiscoding/discussions
+    about: 가벼운 질문, 검증 전 아이디어, 자유로운 토론은 Discussions를 이용해주세요. 잘 정리된 글은 정식 문서로 편입될 수 있습니다.
+  - name: 📖 기여 가이드 보기
+    url: https://github.com/ventureops/wiscoding/blob/main/CONTRIBUTING.md
+    about: 어떤 글이 환영받고 어떻게 작성하면 좋은지 안내하는 문서입니다.

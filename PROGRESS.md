@@ -6,6 +6,7 @@
 
 ---
 
+- **#005** | 2026-04-28 | docs(tools): Obsidian CLI + Claude Code 활용 가이드 추가
 - **#004** | 2026-04-28 | docs(claude-code): 슬래시 커맨드 만들기 가이드 추가 (이슈 #1)
 - **#003** | 2026-04-26 | docs(claude-code): 다중 프로젝트 VS Code 창 관리 가이드 추가
 - **#002** | 2026-04-26 | CLAUDE.md 한글화, PROGRESS.md 신설

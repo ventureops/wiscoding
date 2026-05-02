@@ -6,6 +6,7 @@
 
 ---
 
+- **#007** | 2026-05-03 | docs(tools): claude-forge 도입 사례 및 외부 번들 검토 체크리스트 추가
 - **#006** | 2026-04-29 | docs(claude-code): /my-state 환경 인벤토리 슬래시 명령 가이드 추가
 - **#005** | 2026-04-28 | docs(tools): Obsidian CLI + Claude Code 활용 가이드 추가
 - **#004** | 2026-04-28 | docs(claude-code): 슬래시 커맨드 만들기 가이드 추가 (이슈 #1)
